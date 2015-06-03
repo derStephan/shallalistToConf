@@ -1,7 +1,7 @@
 # shallalistToConf
 Generate a config file for dnsmasq from URL-blacklist of http://www.shallalist.de/
 
-Goal is to redirect domains of selected categories to 0.0.0.1 thus these domains are blocked on DNS basis
+Goal is to redirect domains (and all subdomains) of selected categories to 0.0.0.1 thus these domains are blocked on DNS basis
 
 language: PHP 5, needs cURL and PHAR
 
@@ -45,6 +45,8 @@ You can do one of the following:
 
 1. change the very first variable in php file to meet your requirements. Now you can run the following command in your cron: ```wget "<URLofPhpFile>?download" -O /etc/dnsmasq.conf && /etc/init.d/dnsmasq restart```
 2. select your categories from the list and download the file manually. Open it in an editor. In last line of the header, there is the complete cron command for the selected categories. Just copy and paste it into fcrontab -e.
+
+note: After downloading the conf file, dnsmasq has to be restarted. The given cron commands include this restart.
 
 #screenshot of category selection
 ![Screenshot](https://cloud.githubusercontent.com/assets/7764931/7933941/5688de0c-0923-11e5-8233-3b3bfb3c5e66.png)
