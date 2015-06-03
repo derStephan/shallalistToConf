@@ -1,7 +1,7 @@
 # shallalistToConf
 Generate a config file for dnsmasq from URL-blacklist of http://www.shallalist.de/
 
-Goal is to redirect domains (and all subdomains) of selected categories to 0.0.0.1 thus these domains are blocked on DNS basis
+Goal is to redirect domains (and all subdomains) of selected categories to 0.0.0.0 thus these domains are blocked on DNS basis
 
 language: PHP 5, needs cURL and PHAR
 
@@ -35,7 +35,7 @@ address=/.clipsguide.com/0.0.0.0
 ...
 ```
 
-dnsmasq.conf file and given command for cron are tested to be working in ipFire. Just drop it into /etc/dnsmasq.conf and restart dnsmasq
+dnsmasq.conf file and given command for cron are tested to be working in ipFire. Just drop it into /etc/dnsmasq.conf and restart dnsmasq.
 
 Please note: resuling file may very well exceed 50 MB with 1.500.000+ lines. But blocking is pretty fast on my old hardware anyway. 
 
