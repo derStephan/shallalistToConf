@@ -39,7 +39,7 @@ dnsmasq.conf file and given command for cron are tested to be working in ipFire.
 
 Please note: resuling file may very well exceed 50 MB with 1.500.000+ lines. But blocking is pretty fast on my old hardware anyway. 
 
-#usage with cron
+# usage with cron
 
 You can do one of the following:
 
@@ -48,5 +48,5 @@ You can do one of the following:
 
 note: After downloading the conf file, dnsmasq has to be restarted. The given cron commands include this restart.
 
-#screenshot of category selection
+# screenshot of category selection
 ![Screenshot](https://cloud.githubusercontent.com/assets/7764931/7933941/5688de0c-0923-11e5-8233-3b3bfb3c5e66.png)
