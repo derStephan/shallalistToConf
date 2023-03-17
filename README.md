@@ -1,3 +1,6 @@
+## ⚠️shalla does not publish any lists anymore which renders this software pretty useless. I am sorry.
+
+
 # shallalistToConf
 Generate a config file for dnsmasq from URL-blacklist of http://www.shallalist.de/
 
